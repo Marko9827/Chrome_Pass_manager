@@ -76,9 +76,15 @@
   background: var(--primary);
 }
 
+body{
+  width: 350px;
+  overflow: hidden;
+  height: 650px;
+}
+
 #searchLOOP2 {
   position: absolute;
-  right: 30px;
+  right: 10px;
   margin-top: 12px;
   font-size: 25px;
 }
@@ -212,9 +218,11 @@ footer {
 }
 
 .forSearch {
-  position: absolute !important;
-  top: -5px;
-  right: 10px;
+    position: absolute !important;
+    margin: 0px;
+    margin-top: -16px;
+    padding: 0px 10px !important;
+    right: 20px;
 }
 
 .forSearch button {
@@ -224,4 +232,25 @@ footer {
 }
 .dropdown-menu{
   right: 0px;
+}
+
+.div_options{
+  display: inline-flex;
+}
+
+
+.dropdown-item i {
+  width: 20px;
+  margin-right: 5px;
+}
+
+.dropdown-item a:hover{
+  background: var(--primary) !important;
+  color: var(--white) !important;
+}
+
+.show_hide_password{
+    position: absolute;
+    margin-top: -16px;
+    right: 45px;
 }

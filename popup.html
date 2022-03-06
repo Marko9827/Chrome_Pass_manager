@@ -19,13 +19,13 @@
     </header>
     <main>
         <ul class="nav nav-tabs" id="myTab" role="tablist">
-            <li class="nav-item" role="presentation">
+            <!-- <li class="nav-item" role="presentation">  
                 <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button"
                     role="tab" aria-controls="home" aria-selected="true"><i class="fas fa-home"></i> Home</button>
-            </li>
-            <li class="nav-item" role="presentation">
-                <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button"
-                    role="tab" aria-controls="profile" aria-selected="false"><i class="fas fa-user-lock"></i>
+            </li>-->
+            <li class="nav-item  " role="presentation">
+                <button class="nav-link active" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button"
+                    role="tab" aria-controls="profile" aria-selected="true"><i class="fas fa-user-lock"></i>
                     Passwords</button>
             </li>
             <li class="nav-item" role="presentation">
@@ -35,33 +35,21 @@
             </li>
         </ul>
         <div class="tab-content" id="myTabContent">
-            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">...</div>
-            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+            <!-- <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">...</div> -->
+            <div class="tab-pane fade  active show" id="profile" role="tabpanel" aria-labelledby="profile-tab">
                 <button id="clear-passwords-btn">Clear Passwords</button>
                 <h1>Passwords</h1>
                 <div id="passwords-div"></div>
                 <div-search>
                     <input type="text" id="myInput" placeholder="Search for names.." title="Type in a name">
                     <i id="searchLOOP2" class="fas fa-search"></i>
-                    <div class="dropdown forSearch"  >
-                        <button class=" dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
-                            aria-haspopup="true" data-drop-id="30149" aria-expanded="false">
-                        <i class="fas fa-ellipsis-v"></i>
-                        </button>
-                        <div class="dropdown-menu" data-drop-id="30149" aria-labelledby="dropdownMenuButton">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
-                            <a class="dropdown-item" href="#">Something else here</a>
-                        </div>
-                    </div>
+                     
                 </div-search>
 
                 <table id="myTable" class="table">
                     <tr class="header">
-                        <th>Link</th>
-                        <th>Delete</th>
-                        <th></th>
-                        <th></th>
+                        <th>Website</th>
+                        <th>Options</th>
                     </tr>
 
 
