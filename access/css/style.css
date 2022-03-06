@@ -78,7 +78,7 @@
 
 #searchLOOP2 {
   position: absolute;
-  right: 15px;
+  right: 30px;
   margin-top: 12px;
   font-size: 25px;
 }
@@ -205,4 +205,23 @@ footer {
   overflow: hidden;
   text-overflow: ellipsis;
   max-width: 200px;
+}
+
+.dropdown-toggle::after {
+  display: none !important;
+}
+
+.forSearch {
+  position: absolute !important;
+  top: -5px;
+  right: 10px;
+}
+
+.forSearch button {
+  border: none;
+  font-size: 25px;
+  background: transparent;
+}
+.dropdown-menu{
+  right: 0px;
 }
