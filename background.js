@@ -7,9 +7,13 @@ chrome.webNavigation.onCompleted.addListener(({ tabId, frameId }) => {
 
     chrome.scripting.executeScript({
         target: { tabId },
-        function: newPageLoad,
+        function: { newPageLoad, myFunction },
     })
 })
+
+
+
+ 
 
 const newPageLoad = async () => {
     let inputs = document.getElementsByTagName("input");
@@ -30,8 +34,8 @@ const newPageLoad = async () => {
             popupDiv.style.left = inputRect.left + "px";
             popupDiv.style.top = inputRect.top - (inputRect.height + 120) + "px";
             popupDiv.style.backgroundColor = "white";
-            popupDiv.style.width = "250px";
-            popupDiv.style.height = "120px";
+            popupDiv.style.width = "550px";
+            popupDiv.style.height = "320px";
             popupDiv.style.padding = "10px";
             popupDiv.style.borderRadius = "5px";
             popupDiv.style.border = "solid 1px black";

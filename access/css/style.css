@@ -5,6 +5,10 @@
   padding: 0px;
   color: var(--primary);
   font-family: "Poppins", sans-serif;
+  user-select: none;
+  box-sizing: border-box;
+  outline: none !important;
+  transition: none;
 }
 
 :root {
@@ -52,40 +56,153 @@
   --enable-background: new 0 0 512 512 !important;
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
 
-button {
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--primary_light);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary);
+}
+
+#searchLOOP2 {
+  position: absolute;
+  right: 15px;
+  margin-top: 12px;
+  font-size: 25px;
+}
+
+.tab-content > .tab-pane {
+  padding: 15px;
+  position: absolute;
+  bottom: 0px;
+  overflow-x: auto;
+  top: 42px;
+  width: 100%;
+}
+div-search {
+  position: sticky;
+  top: 5px;
+}
+div-search #myInput {
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 48px 12px 10px;
+  border: none;
+  margin-bottom: 12px;
+  position: unset;
+
+  top: 0px;
+  box-shadow: 0 0 2px 0 rgb(0 0 0 / 20%), 0 1px 10px 0 rgb(0 0 0 / 10%);
+}
+
+#myTable {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #ddd;
+  font-size: 18px;
+  box-shadow: 0 0 2px 0 rgb(0 0 0 / 20%), 0 1px 10px 0 rgb(0 0 0 / 10%);
+  border: none;
+  border-radius: 6px;
+}
+
+#myTable th,
+#myTable td {
+  text-align: left;
+  padding: 12px;
+}
+
+#myTable tr {
+  border-bottom: 1px solid #ddd;
+}
+
+#myTable tr.header,
+#myTable tr:hover {
+  background-color: #f1f1f1;
+}
+
+.nav-link {
+  color: var(--primary) !important;
+}
+
+#myTab {
+}
+
+#myTab button {
+  padding: 8px;
+}
+#myTab button li i {
+  width: 20px;
+  text-align: center;
+}
+
+#myTab .nav-item {
+  text-align: center;
 }
 
 body {
-    
 }
 
-main{
-    
-    position: fixed;
-    top: 167px;
-    left: 0px;
-    right: 0px;
-    text-align: center;
-    bottom: 40px;
-    background: red;
-
+main {
+  position: fixed;
+  top: 140px;
+  left: 0px;
+  right: 0px;
+  text-align: center;
+  bottom: 0px;
 }
 
-header{
+header {
   display: grid;
   text-align: center;
-  padding: 30px;
+  padding: 18px 10px;
+  pointer-events: none;
 }
 
-header img{
-  width: 80px;
-  height: 80px;
+header,
+header * {
+  pointer-events: none;
+}
+
+header h3 {
+  font-size: 18px;
+  margin-top: 7px;
+}
+
+header img {
+  width: 50px;
+  height: 50px;
   display: block;
   margin: auto;
 }
 
-header, footer  {
-    display: block;
-    margin: auto;
+header,
+footer {
+  display: block;
+  margin: auto;
+}
+
+#myTable button {
+  border: none;
+  background: transparent;
+}
+
+#myTable tr[data-id="is_value"] td {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 200px;
 }

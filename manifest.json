@@ -3,7 +3,7 @@
     "description": "Manages passwords.",
     "version": "1.0",
     "manifest_version": 3,
-    "default_locale":"en",
+    "default_locale": "en",
     "background": {
         "service_worker": "background.js"
     },
@@ -16,13 +16,18 @@
         "https://*/*",
         "http://*/*"
     ],
+    "icons": {
+        "16": "./access/icon.png",
+        "48": "./access/icon.png",
+        "128": "./access/icon.png"
+    },
     "action": {
         "default_popup": "popup.html",
         "default_icon": {
+            "16": "./access/icon.png",
+            "48": "./access/icon.png",
             "128": "./access/icon.png"
         }
-    },
-    "icon": {
-        "128": "./access/icon.png"
     }
+    
 }
